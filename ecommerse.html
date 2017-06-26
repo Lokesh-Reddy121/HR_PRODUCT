@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ecommerse</title>
+<!--<head>
+hi loki
+</head>-->
+
+<body class="color">
+ <div id="headerbg" >
+ <div id="header">
+  <a class="headerchart" href="https://www.google.co.in/" target="_blank" onclick="order_status();" 
+  onmouseout="window.status=''; return true;" 
+  onmouseover="window.status='click for live support'; return true;">
+  <img src="/home/loki/Documents/lokesh/mp/click.jpg" alt="no_status_bar" style="height:50px; width:100px;">
+  </a>
+  <a class="headerlogo" onclick="_blank();">
+  <img src="/home/loki/Documents/lokesh/mp/Pizza.jpg" alt="logo" title="EAT24x7" style="width:80px; height:50px;">
+  </a>
+  <div id="heading" class="h1_hungry">
+  <h1>hungry?</h1>
+  </div>
+  <!-- <div id="maintab"> main tab section part
+    <ul class="f_clear">
+     <li id="searchbar" class="searchtab_active"> search bar option
+      <a href="L" onclick="_blank" ><!-- searching by address
+       <img src="/home/loki/Documents/lokesh/mp/address.jpg" alt="searchleft" style="width:13px; height:13px;">
+        <span>searchbyaddress</span> <!--search by address
+       <img src="/home/loki/Documents/lokesh/mp/option.jpg" style="width:13px; height:13px;" alt="searchright">
+      </a>
+      <!-- <ul>
+        <li>
+         <a href="https://eat24.com/" class="restaurent_by_name" onclick="_blank" >searach by restaurent
+          <span>restaurents by name</span>
+         </a>     
+       </li>
+        <li> 
+	     <a href="https://eat24.com/" class="restaurent_city" onclick="_blank"> search by city
+	      <span>restaurents by city</span>
+	     </a>     
+       </li>
+       </ul>
+    </li>
+      <li class="separator"></li> <!--line seperator
+     <li id="mobiletab" class="header_tab"><!-- hunger app
+      <a href="https://eat24.com" >
+	    <img src="/home/loki/Documents/lokesh/mp/mobile.jpg" alt="nothing" class="imgtableft" style="width:13px; height:13px;">
+	     <span>the hunger app</span>    
+      </a>
+     </li>
+      <li class="separator"></li> <!--line seperator
+     <!--<li id="myprofile" class="login" >
+     <a href="account" onclick="_blank">
+      <img src="/home/loki/Documents/cg/extra/project/pizza.jpg" class="imgtableft">
+       <span>login/singup</span>
+      <img src="/home/loki/Documents/cg/extra/project/pizza.jpg" class="imageright">   
+     </a>
+     </li>
+   </ul>
+  </div> -->
+  <!--end of the maintab-->
+ </div>
+ <!-- end of the header-->
+ </div>
+<!--end of the headerbg-->
+<style>
+#header{
+height: 109px;
+position: relative;
+width: 980px;
+margin: 0 auto;
+margin-top: 0px;
+margin-right: auto;
+margin-bottom: 0px;
+margin-left: auto;
+}
+
+a{
+color:333333;
+text-decoration:none;}
+body{
+min-height: 100%;
+height: auto;
+position: relative;
+width: 100%;
+}
+.headerchart{
+position: absolute;
+cursor: pointer;
+top: 0px;
+right: 0px;
+}
+.headerlogo{
+position: absolute;
+top: 32px;
+left: 0px;
+}
+#heading{
+position: absolute;
+top: 0px;
+right: 140px;
+color: red;
+font-weight: bold;
+}
+.h1_hungry{
+font-size: 4px;
+margin: 0;
+text-transform: uppercase;
+}
+#maintab{
+position: absolute;
+bottom: 0px;
+height: 0px;
+right: 200px;
+}
+<!-- #maintab ul{
+list-style: none;
+list-style-type: none;
+list-style-image: none;
+list-style-position: outside;
+}
+#maintab ul{
+text-align: center;
+margin: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 0px;
+position: relative;}
+-->
+<!-- #maintab li{
+margin: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 0px;
+position: relative;
+}-->
+
+<!-- #maintab a{
+color: #abcedf;
+display: inline-block;
+font-family: arial,helvetica;
+font-size: 14px;
+min-width: 30px;
+text-align: center;
+text-decoration: none; 
+font-weight: bold;
+
+}
+#maintab.searchtab_active ul{
+padding: 10px 0;
+padding-bottom: 10px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 10px;
+display: none;
+position: absolute;
+top: 39px;
+min-width: 100%;
+text-align: center;
+background: rgba(255,255,255);
+-moz-box-sizing:border-box;
+z-index: 3;
+}
+#searchbar.searchtab_active{
+border-bottom: : 5px solid #ffa800;
+border-bottom-width: 5px;
+border-bottom-style: solid;
+border-bottom-color:rgb(255,125,0);
+}
+
+#mobiletab.header_tab ul{
+padding: 10px 0;
+padding-bottom: 10px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 10px;
+display: none;
+position: absolute;
+top: 39px;
+min-width: 100%;
+text-align: center;
+background: rgba(255,255,255);
+-moz-box-sizing:border-box;
+z-index: 3;
+}
+
+#mobiletab.header_tab{
+border-bottom: : 5px solid #ffa800;
+border-bottom-width: 5px;
+border-bottom-style: solid;
+border-bottom-color:rgb(255,125,0);
+}
+.header_tab{
+float: left;
+border-bottom: 5px solid #ffa800;
+border-bottom-width:5px; 
+border-bottom-style: solid;
+border-bottom-color: solid transparent;
+}
+
+<!--.login{
+float: left;
+border-bottom: 5px solid #ffa800;
+border-bottom-width:5px; 
+border-bottom-style: solid;
+border-bottom-color: solid transparent;
+}-->
+
+.f_clear{
+right:0px;
+bottom:23px;
+}
+
+.searchtab_active{
+float: left;
+border-bottom: 5px solid #ffa800;
+border-bottom-width:5px; 
+border-bottom-style: solid;
+border-bottom-color: solid transparent;
+}
+
+#headerbg{
+background-color:greenyellow;
+position: relative;}
+
+.img_container{
+
+z-index: -1;
+position: relative;
+margin: 0 auto;
+width: 100%;
+height: 400px;}
+.img_container img.i1{
+animation-delay:30s;}
+
+.img_container img.i2{
+animation-delay:20s;}
+
+.img_container img.i3{
+animation-delay:10s;}
+
+.search_form h2{
+margin: 15px 0;
+color: greenyellow;
+font-size: 50px;
+text-align: center;
+text-shadow: 0 0 15px;}
+
+
+#container{
+    width: 100%;
+    height: 131px;
+    
+    margin: auto;
+    
+    border-spacing: 0;
+}
+
+#find{
+width: 100%;
+height: 131px;
+margin: auto;}
+#search{
+text-align: center;
+right: 120px;
+left: 120px;
+top: 400px;
+}
+
+#coupons{
+height: 100px;
+width: 100%;
+text-align: center;
+}
+
+#coupons h3{
+color: red;
+font-size: 5;
+font-family: bold;
+font-weight: bold;}
+
+#icon{
+text-align: center;}
+</style>
+<!-- the main tab images -->
+<section class="big_container" style="height:400px;"> 
+ <div id="img_container" class="img_container">
+  <h2>Welcome To FoodCourt</h2> 
+  <img src="/home/loki/Documents/lokesh/mp/Pizza.jpg" class="animation i1" alt="nothing" style="width:100%; height:400px;" >
+  <!-- <img src="/home/loki/Documents/lokesh/mp/burger.jpg" class="animation i2" alt="nothing">
+  <img src="/home/loki/Documents/lokesh/mp/biryani.jpg" class="animation i3" alt="nothing"> -->
+ </div>
+</section>
+<!-- section part ends-->
+<div id="container">
+  <div id="find" class="finding" ua-category="HOME">
+   <div class="searching">
+    <table class="search_form">
+    <tbody>
+     <tr>
+      <td>
+       <form id="search" action="http://eat24.com/" method="POST">
+        <input name="Submit" value="1" type="hidden">
+       
+         
+        <div class="search_container">
+         <table>
+          <tbody>
+			  <tr>
+				<td class="address_field"><!-- address field-->
+				 <div>
+				 <input type="text" id="address" placeholder="Enter the address" name="address_auto_complete" autocomplete="off">
+				 </div>
+				 <div class="warning_search_box"></div>				
+				</td>
+				<td class="find_restaurants"><!-- address field-->
+				 <div>
+				 <button ua-action="Find Restaurants">
+  				  Find Restaurants
+  				  <div class="reight_arrow"></div>
+				 </button>
+				 </div>
+				 <div class="warning_search_box"></div>				
+				</td>	  
+			  </tr>          
+          </tbody>
+         </table>
+        </div>        
+       </form>
+      </td>     
+     </tr>    
+    </tbody>    
+    </table>
+   </div>  
+  </div>
+</div>
+
+<div id="coupons">
+ <h3>Want coupons, love notes, deep thoughts about bacon? Get our weekly email:</h3>
+ <label>Name:</label>
+  <input type="text" name="id" maxlength="30" placeholder="Name" autocomplete="off" />
+ <label>Email:</label>
+  <input type="text" name="id" maxlength="30" placeholder="Email" autocomplete="off" />
+  <input type="button" maxlength="15" value="signup" />
+</div>
+
+<div id="footer">
+ <div id="footer_container">
+  <div id="icons">
+   <div id="mobile" class="mobileicon">
+      <a href="mobile" title="mobile">
+       <span>Mobile</span>      
+      </a>
+   </div>
+   <div id="chat" class="chaticon">
+    <a href="chat" title="chat">
+	  <span>Massage Us</span>    
+    </a>   
+   </div>
+   <div id="about" class="abouticon">
+    <a href="about" title="about">
+     <span>About Us</span>    
+    </a>   
+   </div>
+   <div id="fb" class="fbicon">
+    <a href="fb" title="fb">
+     <span>Facebook</span>    
+    </a>   
+   </div>  
+   <div id="twitter" class="twittericon">
+    <a href="twitter" title="twitter">
+     <span>Twitter</span>    
+    </a>   
+   </div>
+  </div>
+ <!--end of the icons-->
+ <div id="footer_cities" class="citi">
+  <div>
+   <b>SiteMap</b>
+   <h><a href="google.com" title="kadapa">kadapa</a></h>
+   <h><a href="google.com" title="anantapur">ananthapur</a></h>
+   <h><a href="goolgle.com" title="vyzag">vyzag</a></h>  
+  </div> 
+ </div> 
+ <div id="footer_text">
+  <span><a href="google.com">view privacy statements</a></span></b>
+  <span><a href="google.com">by using our website you agreed to all</a></span>
+ </div>
+ <div id="copy">this is done by <span>©</span>EAT24.com</div>
+ </div>
+</div>
+</body>
+</html>
